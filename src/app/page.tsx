@@ -48,10 +48,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Rest of the page content */}
-      <section className="min-h-screen bg-[#faf7f2] py-20">
-        <div className="max-w-7xl mx-auto px-6 text-center text-zinc-500">
-           <p>Scroll down to see the navbar morph</p>
+      {/* Crafts Section */}
+      <section className="relative w-full bg-[#faf7f2] pt-12 pb-32">
+        <div className="max-w-7xl mx-auto px-6 flex justify-center">
+          
+          {/* Product Image (contains the title as well) */}
+          <div className="w-full relative flex justify-center">
+            <Image
+              src="/DEmo Section.png"
+              alt="Crafts Demo Dashboard"
+              width={1600}
+              height={1000}
+              className="w-full max-w-[1400px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]"
+              priority
+            />
+          </div>
+          
         </div>
       </section>
     </main>
