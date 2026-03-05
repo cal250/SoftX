@@ -9,35 +9,34 @@ const Sparkle = () => (
     <path d="M24 0C24 13.2548 13.2548 24 0 24C13.2548 24 24 34.7452 24 48C24 34.7452 34.7452 24 48 24C34.7452 24 24 13.2548 24 0Z" fill="white" fillOpacity="0.8"/>
   </svg>
 );
-
 const projects = [
   {
     id: "01",
     title: "Kigali BroadCast Cooperation [KKC]",
     description: "What started with urgency slowly turns into stalled timelines and lost competitive edge.",
     category: "Mobile Development",
-    image: "/Case studies.png" // Using existing Case studies.png for 01
+    image: "/iPhone.png" 
   },
   {
     id: "02",
     title: "Clarity UI",
     description: "What started with urgency slowly turns into stalled timelines and lost competitive edge.",
     category: "Web Development",
-    image: "/Clarity.png"
+    image: "/MacBook_13.png"
   },
   {
     id: "03",
     title: "Kennix",
     description: "What started with urgency slowly turns into stalled timelines and lost competitive edge.",
     category: "Graphic Design",
-    image: "/Kennix.png"
+    image: "/Letter_Poster.png"
   },
   {
     id: "04",
     title: "Wonderland",
     description: "What started with urgency slowly turns into stalled timelines and lost competitive edge.",
     category: "3d Modelling",
-    image: "/Case studies_2.png" // Using existing Case studies_2.png for 04
+    image: "/Web3.png" 
   }
 ];
 

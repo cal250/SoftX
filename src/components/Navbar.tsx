@@ -27,7 +27,7 @@ export default function Navbar() {
   }, []);
   
   // Decide if we should show transparent/white navbar based on scroll AND route
-  const isTransparentTop = !isScrolled && (pathname === '/' || pathname === '/case-studies');
+  const isTransparentTop = !isScrolled && (pathname === '/' || pathname === '/case-studies' || pathname === '/about');
 
   return (
     <div
