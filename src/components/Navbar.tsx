@@ -42,7 +42,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         style={{
           background: isScrolled
-            ? "linear-gradient(145deg, #f0ece6, #faf7f2)"
+            ? "linear-gradient(145deg, #f0ece6, #F6F2EF)"
             : "transparent",
           boxShadow: isScrolled
             ? "8px 8px 20px rgba(0,0,0,0.06), -8px -8px 20px rgba(255,255,255,0.9), inset 1px 1px 2px rgba(255,255,255,0.6)"
@@ -82,7 +82,7 @@ export default function Navbar() {
                 style={{
                   ...(isActive && isScrolled
                     ? {
-                        background: "linear-gradient(145deg, #e8e4de, #faf7f2)",
+                        background: "linear-gradient(145deg, #e8e4de, #F6F2EF)",
                         boxShadow:
                           "3px 3px 8px rgba(0,0,0,0.06), -3px -3px 8px rgba(255,255,255,0.9), inset 1px 1px 2px rgba(255,255,255,0.5)",
                       }

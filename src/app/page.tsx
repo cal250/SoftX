@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Telescope, Map, LayoutGrid, Rocket } from "lucide-react";
+import { ArrowUpRight, Telescope, Map, LayoutGrid, Rocket, Zap, BarChart2, Lightbulb } from "lucide-react";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -451,6 +454,193 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Case Studies Section */}
+      <section className="relative w-full bg-[#faf7f2] py-32 ">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Header Split */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 mb-20 items-end">
+            <div>
+              <span 
+                className="text-[#111] font-bold tracking-wider text-[15px] mb-4 block"
+                style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+              >
+                &#123; Case Studies &#125;
+              </span>
+              <h2 
+                className="text-[40px] md:text-[56px] leading-[1.05] tracking-tight text-[#FF6A00]"
+                style={{ fontFamily: "'Cal Sans', sans-serif" }}
+              >
+                Results that <br />
+                Compound
+              </h2>
+            </div>
+            <div className="lg:pb-4">
+              <p 
+                className="text-[#444444] text-lg font-medium leading-relaxed max-w-[450px]"
+                style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+              >
+                We uncover your users&apos; real problems and deliver products with speed, strategy, and efficiency to maximize impact.
+              </p>
+            </div>
+          </div>
+
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            
+            {/* Project 1: Clarity UI */}
+            <div className="group flex flex-col relative cursor-pointer pt-4 pb-12">
+              <div className="w-full relative h-[360px] rounded-[32px] overflow-hidden drop-shadow-sm bg-black z-10">
+                <Image
+                  src="/MacBook.png"
+                  alt="Clarity UI Project Preview"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute bottom-4 left-0 right-0 z-20 bg-[#FFD1AF] p-8 rounded-[32px] flex justify-between items-center drop-shadow-sm transition-transform duration-300 group-hover:-translate-y-2 group-hover:bg-[#FFC096]">
+                <h3 
+                  className="text-2xl font-bold text-[#111111] tracking-tight"
+                  style={{ fontFamily: "'Cal Sans', sans-serif" }}
+                >
+                  Clarity UI
+                </h3>
+                <ArrowUpRight strokeWidth={2} size={26} className="text-[#111111]" />
+              </div>
+            </div>
+
+            {/* Project 2: KBC */}
+            <div className="group flex flex-col relative cursor-pointer pt-4 pb-12">
+              <div className="w-full relative h-[360px] rounded-[32px] overflow-hidden drop-shadow-sm bg-black z-10">
+                <Image
+                  src="/iPhone.png"
+                  alt="KBC Project Preview"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute bottom-4 left-0 right-0 z-20 bg-[#FFD1AF] p-8 rounded-[32px] flex justify-between items-center drop-shadow-sm transition-transform duration-300 group-hover:-translate-y-2 group-hover:bg-[#FFC096]">
+                <h3 
+                  className="text-2xl font-bold text-[#111111] tracking-tight"
+                  style={{ fontFamily: "'Cal Sans', sans-serif" }}
+                >
+                  KBC
+                </h3>
+                <ArrowUpRight strokeWidth={2} size={26} className="text-[#111111]" />
+              </div>
+            </div>
+
+            {/* Project 3: Kennix */}
+            <div className="group flex flex-col relative cursor-pointer pt-4 pb-12">
+              <div className="w-full relative h-[360px] rounded-[32px] overflow-hidden drop-shadow-sm bg-[#e8eaed] z-10"> {/* Subtle background for poster */}
+                <Image
+                  src="/Letter_Poster.png"
+                  alt="Kennix Project Preview"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute bottom-4 left-0 right-0 z-20 bg-[#FFD1AF] p-8 rounded-[32px] flex justify-between items-center drop-shadow-sm transition-transform duration-300 group-hover:-translate-y-2 group-hover:bg-[#FFC096]">
+                <h3 
+                  className="text-2xl font-bold text-[#111111] tracking-tight"
+                  style={{ fontFamily: "'Cal Sans', sans-serif" }}
+                >
+                  Kennix
+                </h3>
+                <ArrowUpRight strokeWidth={2} size={26} className="text-[#111111]" />
+              </div>
+            </div>
+
+          </div>
+
+          {/* All Works Link */}
+          <div className="flex justify-center w-full">
+            <Link 
+              href="#" 
+              className="group inline-flex items-center gap-2 text-[26px] font-bold text-[#111111] tracking-tight border-b-2 border-transparent hover:border-[#111111] transition-all duration-300"
+              style={{ fontFamily: "'Cal Sans', sans-serif" }}
+            >
+              All Works
+              <span className="transform transition-transform duration-300 group-hover:translate-x-2">
+                &rarr;
+              </span>
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Mission Statement Section */}
+      <section className="relative w-full h-[800px] overflow-hidden flex items-center justify-center bg-[#F6F2EF]">
+        
+        {/* Wide Elliptical Radial Gradient Glow - Much wider to cover sides */}
+        <div 
+          className="absolute inset-0 pointer-events-none z-0"
+          style={{
+            background: `radial-gradient(ellipse at 50% 50%, #FF0000 0%, #FFA200 55%, transparent 85%)`,
+            maskImage: 'linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)',
+            WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)',
+            transform: 'scaleX(1.1)' // Slightly wider spread
+          }}
+        />
+
+        {/* Central Text Content */}
+        <div className="relative z-10 max-w-[950px] mx-auto px-6 text-center">
+          <h2 
+            className="text-[38px] md:text-[56px] leading-[1.15] tracking-tight text-white font-bold"
+            style={{ fontFamily: "'Cal Sans', sans-serif" }}
+          >
+            We strive to turn ideas into <br />
+            impactful digital experiences <br />
+            that <span className="text-white/80">empower users and drive <br /> meaningful growth</span>
+          </h2>
+        </div>
+
+        {/* Floating Elements - Adjusted to match reference proportions */}
+        
+        {/* Top Center: MacBook */}
+        <div className="absolute top-[12%] left-[50%] -translate-x-1/2 md:translate-x-[50px] lg:translate-x-[100px] z-20 w-24 md:w-32 h-24 md:h-32 rounded-[24px] overflow-hidden shadow-2xl bg-black">
+          <Image
+            src="/flip_pc.png"
+            alt="Laptop"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Top Left: Lightning Icon */}
+        <div className="absolute top-[30%] left-[12%] md:left-[20%] z-20 w-14 h-14 rounded-2xl bg-[#FF6A00] flex items-center justify-center text-white shadow-xl border border-white/20">
+          <Zap fill="white" size={24} />
+        </div>
+
+        {/* Middle Right: Chart Icon */}
+        <div className="absolute top-[40%] right-[10%] md:right-[18%] z-20 w-14 h-14 rounded-2xl bg-[#FF6A00] flex items-center justify-center text-white shadow-xl border border-white/20">
+          <BarChart2 size={24} strokeWidth={2.5} />
+        </div>
+
+        {/* Bottom Center: Lightbulb Icon */}
+        <div className="absolute bottom-[18%] left-[45%] md:left-[48%] z-20 w-14 h-14 rounded-2xl bg-[#FF6A00] flex items-center justify-center text-white shadow-xl border border-white/20">
+          <Lightbulb fill="white" size={24} />
+        </div>
+
+        {/* Bottom Right: Robot Image */}
+        <div className="absolute bottom-[15%] right-[15%] md:right-[22%] z-20 w-24 md:w-32 h-24 md:h-32 rounded-[24px] overflow-hidden shadow-2xl bg-black">
+          <Image
+            src="/robot.png"
+            alt="Robot"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+      </section>
+
+      <CTA />
+
+      <FAQ />
+
+      <Footer />
 
     </main>
   );
