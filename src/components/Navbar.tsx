@@ -27,7 +27,8 @@ export default function Navbar() {
   }, []);
   
   // Decide if we should show transparent/white navbar based on scroll AND route
-  const isTransparentTop = !isScrolled && (pathname === '/' || pathname === '/case-studies' || pathname === '/about');
+  const isTransparentTop = !isScrolled && (pathname === '/' || pathname === '/case-studies' || pathname === '/about' || pathname === '/contact');
+  const isContactPage = pathname === '/contact';
 
   return (
     <div
@@ -53,7 +54,7 @@ export default function Navbar() {
         <div className="flex-1 shrink-0">
           <Link href="/" className="inline-block transition-transform duration-300 hover:scale-[1.03] active:scale-95">
             <Image
-              src={isScrolled ? "/Logo_scroll.svg" : "/Logo.svg"}
+              src={(isScrolled || isContactPage) ? "/Logo_scroll.svg" : "/Logo.svg"}
               alt="SoftX Logo"
               width={140}
               height={46}
@@ -68,10 +69,11 @@ export default function Navbar() {
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             
-            // Text color logic: white when transparent top, dark grey when scrolled
-            const baseTextColor = isTransparentTop ? "text-white/90" : "text-zinc-600";
-            const activeTextColor = isTransparentTop ? "text-white" : "text-zinc-800";
-            const hoverTextColor = isTransparentTop ? "text-white" : "text-zinc-800";
+            // Text color logic: white when transparent top (except contact), dark grey otherwise
+            const useWhiteText = isTransparentTop && !isContactPage;
+            const baseTextColor = useWhiteText ? "text-white/90" : "text-zinc-600";
+            const activeTextColor = useWhiteText ? "text-white" : "text-zinc-800";
+            const hoverTextColor = useWhiteText ? "text-white" : "text-zinc-800";
 
             return (
               <Link

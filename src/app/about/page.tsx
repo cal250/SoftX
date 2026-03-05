@@ -188,7 +188,7 @@ export default function About() {
                 {/* Member Image */}
                 <div className="w-full md:w-[220px] aspect-square relative rounded-[32px] overflow-hidden bg-[#FFDED0]">
                   <Image
-                    src={member.image}
+                    src="/robot.png"
                     alt={member.name}
                     fill
                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
