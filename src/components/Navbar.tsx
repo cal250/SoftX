@@ -26,10 +26,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  // Decide if we should show transparent/white navbar based on scroll AND route (e.g. only transparent on Home)
-  // For now, let's assume transparent on top of every page, or specifically restrict to home top?
-  // The request implies normal navbar before scrolling is white/transparent for the hero
-  const isTransparentTop = !isScrolled && pathname === '/';
+  // Decide if we should show transparent/white navbar based on scroll AND route
+  const isTransparentTop = !isScrolled && (pathname === '/' || pathname === '/case-studies');
 
   return (
     <div
