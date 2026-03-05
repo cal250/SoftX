@@ -29,6 +29,9 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "SoftX",
   description: "SoftX",
+  icons: {
+    icon: "/Favicon.svg",
+  },
 };
 
 export default function RootLayout({
