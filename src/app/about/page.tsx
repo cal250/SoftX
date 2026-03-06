@@ -19,15 +19,15 @@ export default function About() {
 
         <div className="relative z-10 max-w-5xl mx-auto">
           <h1 
-            className="text-[54px] md:text-[80px] lg:text-[100px] font-bold leading-[1.05] tracking-tight text-white mb-6"
+            className="text-[44px] sm:text-[80px] lg:text-[100px] font-bold leading-[1.1] md:leading-[1.05] tracking-tight text-white mb-6"
             style={{ fontFamily: "'Cal Sans', sans-serif" }}
           >
             Your Vision
-            <br />
+            <br className="hidden sm:block" />
             <span 
               className="block mt-2"
               style={{
-                WebkitTextStroke: "2px white",
+                WebkitTextStroke: "1px white",
                 color: "transparent",
               }}
             >
@@ -81,10 +81,10 @@ export default function About() {
           {/* Section Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-20">
             <h2 
-              className="text-[48px] md:text-[64px] font-bold text-[#FF6A00] leading-none"
+              className="text-[40px] md:text-[64px] font-bold text-[#FF6A00] leading-none"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              Our <br /> Identity
+              Our <br className="hidden lg:block" /> Identity
             </h2>
             <p 
               className="max-w-md text-[#555555] text-lg leading-relaxed mt-4"
@@ -149,10 +149,10 @@ export default function About() {
           {/* Section Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-20">
             <h2 
-              className="text-[48px] md:text-[64px] font-bold text-[#FF6A00] leading-[1.1]"
+              className="text-[40px] md:text-[64px] font-bold text-[#FF6A00] leading-[1.1]"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              The Minds Behind <br /> Soft Labs&rdquo;
+              The Minds Behind <br className="hidden lg:block" /> Soft Labs&rdquo;
             </h2>
             <p 
               className="max-width-md lg:max-w-xs text-[#555555] text-lg leading-relaxed mt-4"

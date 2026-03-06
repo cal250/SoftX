@@ -21,16 +21,16 @@ export default function KBCProject() {
             {/* Title */}
             <div className="flex-1">
               <h1 
-                className="text-[56px] md:text-[80px] lg:text-[96px] font-bold text-white leading-[1.05] tracking-tight"
+                className="text-[40px] sm:text-[80px] lg:text-[96px] font-bold text-white leading-[1.1] md:leading-[1.05] tracking-tight"
                 style={{ fontFamily: "'Cal Sans', sans-serif" }}
               >
-                Kigali Broadcast Cooperation <br />
+                Kigali Broadcast Cooperation <br className="hidden sm:block" />
                 <span className="opacity-90">[KBC]</span>
               </h1>
             </div>
 
             {/* Info Grid */}
-            <div className="lg:w-3/5 grid grid-cols-1 md:grid-cols-3 gap-0 border-l border-white/20">
+            <div className="lg:w-3/5 grid grid-cols-1 md:grid-cols-3 gap-0 border-l border-white/20 md:border-l">
               {/* Type */}
               <div className="p-8 border-r border-white/20">
                 <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-4" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>Type</p>
@@ -243,7 +243,7 @@ export default function KBCProject() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-32 items-start mb-24">
             <div>
               <h2 
-                className="text-[44px] md:text-[64px] font-bold text-[#FF6A00] leading-none"
+                className="text-[36px] sm:text-[44px] md:text-[64px] font-bold text-[#FF6A00] leading-tight md:leading-none"
                 style={{ fontFamily: "'Cal Sans', sans-serif" }}
               >
                 Projected Impact
@@ -284,7 +284,7 @@ export default function KBCProject() {
                 <div className="py-20 space-y-8">
                   <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
                     <span 
-                      className="text-[80px] md:text-[100px] font-bold text-[#111111] leading-none"
+                      className="text-[60px] md:text-[80px] lg:text-[100px] font-bold text-[#111111] leading-none"
                       style={{ fontFamily: "var(--font-roboto), sans-serif" }}
                     >
                       {metric.percentage}

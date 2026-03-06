@@ -18,7 +18,7 @@ export default function Contact() {
           {/* Left Side: Contact Info */}
           <div className="w-full lg:w-2/5">
             <h1 
-              className="text-[64px] md:text-[80px] font-bold text-[#FF6A00] leading-none mb-8"
+              className="text-[48px] sm:text-[64px] md:text-[80px] font-bold text-[#FF6A00] leading-none mb-8"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
               Contact Us

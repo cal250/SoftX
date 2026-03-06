@@ -55,12 +55,12 @@ export default function CaseStudies() {
 
         <div className="relative z-10 max-w-5xl mx-auto">
           <h1 
-            className="text-[48px] md:text-[80px] lg:text-[100px] font-bold leading-[1.05] tracking-tight text-white mb-4"
+            className="text-[44px] sm:text-[80px] lg:text-[100px] font-bold leading-[1.1] md:leading-[1.05] tracking-tight text-white mb-4"
             style={{ fontFamily: "'Cal Sans', sans-serif" }}
           >
             See How We Build
-            <br />
-            <div className="flex items-center justify-center">
+            <br className="hidden sm:block" />
+            <div className="flex items-center justify-center flex-wrap">
               <Sparkle />
               <span>Impactful</span>
               <Sparkle />
@@ -68,7 +68,7 @@ export default function CaseStudies() {
             <span 
               className="block mt-2"
               style={{
-                WebkitTextStroke: "2px white",
+                WebkitTextStroke: "1px white",
                 color: "transparent",
               }}
             >
@@ -136,7 +136,7 @@ export default function CaseStudies() {
                 <div className="w-full lg:w-1/2 bg-[#FFDED0] p-10 md:p-14 flex flex-col justify-between">
                   <div>
                     <span 
-                      className="text-2xl font-bold text-[#111111]/40 block mb-6"
+                      className="text-xl md:text-2xl font-bold text-[#111111]/40 block mb-4 md:mb-6"
                       style={{ fontFamily: "var(--font-roboto-mono), monospace" }}
                     >
                       {project.id}

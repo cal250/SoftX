@@ -20,10 +20,10 @@ export default function Home() {
         
         <div className="relative z-10 flex flex-col items-center text-center max-w-[1000px] mx-auto mt-6">
           <h1 
-            className="text-6xl md:text-7xl lg:text-[88px] text-white leading-[1.02] tracking-tight mb-6 drop-shadow-sm transition-all"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[88px] text-white leading-[1.1] md:leading-[1.02] tracking-tight mb-6 drop-shadow-sm transition-all"
             style={{ fontFamily: "'Cal Sans', sans-serif" }}
           >
-            Elite Software Execution <br />
+            Elite Software Execution <br className="hidden sm:block" />
             <span 
               style={{
                 WebkitTextStroke: "2px white",
@@ -83,18 +83,18 @@ export default function Home() {
               &#123; Problem &#125;
             </span>
             <h2 
-              className="text-[40px] md:text-[56px] leading-[1.05] tracking-tight text-[#FF6A00] mb-20"
+              className="text-[36px] md:text-[56px] leading-[1.1] md:leading-[1.05] tracking-tight text-[#FF6A00] mb-12 md:mb-20"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              Building Software Shouldn&apos;t <br />
+              Building Software Shouldn&apos;t <br className="hidden sm:block" />
               Feel Like A Gamble
             </h2>
 
             <p 
-              className="text-3xl md:text-[34px] leading-snug tracking-tight font-bold text-[#111111]"
+              className="text-2xl md:text-[34px] leading-snug tracking-tight font-bold text-[#111111]"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              Speed without <span className="text-[#888888]">structure</span> is chaos. <br />
+              Speed without <span className="text-[#888888]">structure</span> is chaos. <br className="hidden sm:block" />
               Structure without <span className="text-[#888888]">speed</span> is death.
             </p>
           </div>
@@ -103,12 +103,12 @@ export default function Home() {
           <div className="flex flex-col pt-8 lg:pt-0 lg:pl-16">
             
             {/* Item 1 */}
-            <div className="relative pb-16 pl-12">
-              {/* Vertical line with a gap at the bottom */}
-              <div className="absolute left-0 top-12 bottom-6 w-[1px] bg-[#d1cec7]"></div>
+            <div className="relative pb-16 pl-6 md:pl-12">
+              {/* Vertical line with a gap at the bottom - Hidden on mobile */}
+              <div className="absolute left-0 top-12 bottom-6 w-[1px] bg-[#d1cec7] hidden md:block"></div>
               
               <span 
-                className="absolute top-0 -left-[18px] font-bold text-[28px] text-[#111111] leading-none"
+                className="inline-block md:absolute top-0 md:-left-[18px] font-bold text-[24px] md:text-[28px] text-[#111111] leading-none mb-4 md:mb-0"
                 style={{ fontFamily: "var(--font-roboto-mono), monospace" }}
               >
                 01
@@ -128,11 +128,11 @@ export default function Home() {
             </div>
 
             {/* Item 2 */}
-            <div className="relative pb-16 pl-12">
-              <div className="absolute left-0 top-12 bottom-6 w-[1px] bg-[#d1cec7]"></div>
+            <div className="relative pb-16 pl-6 md:pl-12">
+              <div className="absolute left-0 top-12 bottom-6 w-[1px] bg-[#d1cec7] hidden md:block"></div>
               
               <span 
-                className="absolute top-0 -left-[20px] font-bold text-[28px] text-[#111111] leading-none"
+                className="inline-block md:absolute top-0 md:-left-[20px] font-bold text-[24px] md:text-[28px] text-[#111111] leading-none mb-4 md:mb-0"
                 style={{ fontFamily: "var(--font-roboto-mono), monospace" }}
               >
                 02
@@ -152,11 +152,11 @@ export default function Home() {
             </div>
 
             {/* Item 3 */}
-            <div className="relative pb-16 pl-12">
-              <div className="absolute left-0 top-12 bottom-6 w-[1px] bg-[#d1cec7]"></div>
+            <div className="relative pb-16 pl-6 md:pl-12">
+              <div className="absolute left-0 top-12 bottom-6 w-[1px] bg-[#d1cec7] hidden md:block"></div>
               
               <span 
-                className="absolute top-0 -left-[21px] font-bold text-[28px] text-[#111111] leading-none"
+                className="inline-block md:absolute top-0 md:-left-[21px] font-bold text-[24px] md:text-[28px] text-[#111111] leading-none mb-4 md:mb-0"
                 style={{ fontFamily: "var(--font-roboto-mono), monospace" }}
               >
                 03
@@ -176,9 +176,9 @@ export default function Home() {
             </div>
 
             {/* Item 4 */}
-            <div className="relative pl-12">
+            <div className="relative pl-6 md:pl-12">
               <span 
-                className="absolute top-0 -left-[23px] font-bold text-[28px] text-[#111111] leading-none"
+                className="inline-block md:absolute top-0 md:-left-[23px] font-bold text-[24px] md:text-[28px] text-[#111111] leading-none mb-4 md:mb-0"
                 style={{ fontFamily: "var(--font-roboto-mono), monospace" }}
               >
                 04
@@ -215,10 +215,10 @@ export default function Home() {
                 &#123; Solution &#125;
               </span>
               <h2 
-                className="text-[40px] md:text-[56px] leading-[1.05] tracking-tight text-[#FF6A00]"
+                className="text-[36px] md:text-[56px] leading-[1.1] md:leading-[1.05] tracking-tight text-[#FF6A00]"
                 style={{ fontFamily: "'Cal Sans', sans-serif" }}
               >
-                From Idea to Impact <br />
+                From Idea to Impact <br className="hidden sm:block" />
                 Step by Step
               </h2>
             </div>
@@ -332,10 +332,10 @@ export default function Home() {
               &#123; Services &#125;
             </span>
             <h2 
-              className="text-[40px] md:text-[56px] leading-[1.05] tracking-tight text-[#FF6A00]"
+              className="text-[36px] md:text-[56px] leading-[1.1] md:leading-[1.05] tracking-tight text-[#FF6A00]"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              The Work <br />
+              The Work <br className="hidden sm:block" />
               We Deliver
             </h2>
           </div>
@@ -469,10 +469,10 @@ export default function Home() {
                 &#123; Case Studies &#125;
               </span>
               <h2 
-                className="text-[40px] md:text-[56px] leading-[1.05] tracking-tight text-[#FF6A00]"
+                className="text-[36px] md:text-[56px] leading-[1.1] md:leading-[1.05] tracking-tight text-[#FF6A00]"
                 style={{ fontFamily: "'Cal Sans', sans-serif" }}
               >
-                Results that <br />
+                Results that <br className="hidden sm:block" />
                 Compound
               </h2>
             </div>

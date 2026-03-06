@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <section className="relative w-full bg-[#F6F2EF] pb-32 pt-20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="relative w-full h-[480px] rounded-[40px] bg-[#FF6A00] overflow-hidden flex flex-col items-center justify-center text-center px-6 shadow-2xl shadow-orange-500/10">
+        <div className="relative w-full min-h-[400px] md:h-[480px] rounded-[32px] md:rounded-[40px] bg-[#FF6A00] overflow-hidden flex flex-col items-center justify-center text-center px-6 py-16 md:py-0 shadow-2xl shadow-orange-500/10">
           
           {/* 3D Wireframe Grid Background Effect */}
           <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
@@ -39,10 +39,10 @@ export default function CTA() {
           {/* Content */}
           <div className="relative z-10">
             <h2 
-              className="text-white text-[44px] md:text-[64px] font-bold leading-[1.05] tracking-tight mb-12"
+              className="text-white text-[32px] sm:text-[44px] md:text-[64px] font-bold leading-[1.1] md:leading-[1.05] tracking-tight mb-8 md:mb-12"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              Let&apos;s Create Something <br />
+              Let&apos;s Create Something <br className="hidden sm:block" />
               Meaningful
             </h2>
 
