@@ -5,8 +5,8 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const Sparkle = () => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block mx-4 md:mx-6 w-8 h-8 md:w-12 md:h-12">
-    <path d="M24 0C24 13.2548 13.2548 24 0 24C13.2548 24 24 34.7452 24 48C24 34.7452 34.7452 24 48 24C34.7452 24 24 13.2548 24 0Z" fill="white" fillOpacity="0.8"/>
+  <svg width="48" height="48" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block mx-4 md:mx-6 w-8 h-8 md:w-12 md:h-12">
+    <path d="M66.0661 28.0077C57.68 21.2234 45.3817 22.5221 38.5975 30.9082L50.8816 15.7236L31.4453 0L28.0058 4.25168C21.2215 12.6378 22.5201 24.9361 30.9063 31.7203L15.7217 19.4363L-0.00191331 38.8725L4.24977 42.3121C12.6359 49.0963 24.9342 47.7977 31.7184 39.4115L19.4343 54.5961L38.8706 70.3197L42.3101 66.0681C49.0944 57.6819 47.7958 45.3837 39.4096 38.5994L54.5942 50.8835L70.3178 31.4472L66.0661 28.0077Z" fill="white" fillOpacity="0.9"/>
   </svg>
 );
 const projects = [
@@ -85,7 +85,7 @@ export default function CaseStudies() {
           </p>
 
           <Link 
-            href="#"
+            href="/contact"
             className="inline-flex items-center gap-4 bg-[#FF6A00] hover:scale-105 transition-all duration-300 py-4 pl-8 pr-4 rounded-full group shadow-xl shadow-orange-500/20"
           >
             <span 

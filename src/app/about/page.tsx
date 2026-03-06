@@ -44,7 +44,7 @@ export default function About() {
           </p>
 
           <Link 
-            href="#"
+            href="/contact"
             className="inline-flex items-center gap-4 bg-white hover:bg-white/90 transition-all duration-300 py-4 pl-8 pr-4 rounded-full group shadow-xl shadow-orange-500/10"
           >
             <span 

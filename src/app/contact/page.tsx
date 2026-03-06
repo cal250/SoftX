@@ -4,16 +4,16 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const SoftXMark = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#111111]/60">
-    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="currentColor"/>
+  <svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#111111]/80">
+    <path d="M14.0625 15.9375V20.625L4.6875 30H0V25.3125L9.375 15.9375H14.0625ZM30 25.3125V30H25.3125L15.9375 20.625V15.9375H20.625L30 25.3125ZM14.0625 9.375V14.0625H9.375L0 4.6875V0H4.6875L14.0625 9.375ZM30 4.6875L20.625 14.0625H15.9375V9.375L25.3125 0H30V4.6875Z" fill="currentColor"/>
   </svg>
 );
 
 export default function Contact() {
   return (
     <main className="min-h-screen bg-[#F6F2EF] flex flex-col">
-      <section className="pt-32 lg:pt-40 pb-16 px-6 flex-grow flex items-center">
-        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-32 items-center">
+      <section className="pt-32 lg:pt-56 pb-16 px-6 flex-grow flex items-start">
+        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row gap-12 lg:gap-32 items-start">
           
           {/* Left Side: Contact Info */}
           <div className="w-full lg:w-2/5">
