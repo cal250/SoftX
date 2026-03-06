@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Roboto_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Roboto_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import "cal-sans";
 import Navbar from "@/components/Navbar";
@@ -26,6 +25,12 @@ const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
 });
 
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
+
 export const metadata: Metadata = {
   title: "SoftX",
   description: "SoftX",
@@ -42,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${robotoMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${robotoMono.variable} ${roboto.variable} antialiased`}
       >
         <Navbar />
         {children}

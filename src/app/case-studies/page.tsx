@@ -12,7 +12,7 @@ const Sparkle = () => (
 const projects = [
   {
     id: "01",
-    title: "Kigali BroadCast Cooperation [KKC]",
+    title: "Kigali BroadCast Cooperation [KBC]",
     description: "What started with urgency slowly turns into stalled timelines and lost competitive edge.",
     category: "Mobile Development",
     image: "/iPhone.png" 
@@ -159,7 +159,7 @@ export default function CaseStudies() {
                   </div>
 
                   <Link 
-                    href="#" 
+                    href="/case-studies/kbc" 
                     className="inline-flex items-center gap-2 text-[#111111] font-bold text-lg hover:gap-4 transition-all duration-300 border-b-2 border-transparent hover:border-[#FF6A00] w-fit pt-8"
                     style={{ fontFamily: "var(--font-poppins), sans-serif" }}
                   >
