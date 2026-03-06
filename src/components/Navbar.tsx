@@ -103,7 +103,6 @@ export default function Navbar() {
                     : isActive && !isScrolled
                     ? {
                         background: "rgba(255, 255, 255, 0.12)",
-                        border: "1px solid rgba(255, 255, 255, 0.2)",
                       }
                     : {}),
                   transition: "all 0.3s ease",
@@ -112,6 +111,20 @@ export default function Navbar() {
                   relative px-7 py-2 text-[15px] font-medium rounded-full transition-all duration-300
                   ${isActive ? activeTextColor : `${baseTextColor} hover:${hoverTextColor}`}
                 `}
+                onMouseEnter={(e) => {
+                  if (!isActive) {
+                    if (isScrolled) {
+                      e.currentTarget.style.background = "rgba(0,0,0,0.03)";
+                    } else if (!isContactPage) {
+                      e.currentTarget.style.background = "rgba(255,255,255,0.1)";
+                    }
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isActive) {
+                    e.currentTarget.style.background = "transparent";
+                  }
+                }}
               >
                 {link.name}
               </Link>
