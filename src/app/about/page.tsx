@@ -152,7 +152,7 @@ export default function About() {
               className="text-[40px] md:text-[64px] font-bold text-[#FF6A00] leading-[1.1]"
               style={{ fontFamily: "'Cal Sans', sans-serif" }}
             >
-              The Minds Behind <br className="hidden lg:block" /> Soft Labs&rdquo;
+              The Minds Behind <br className="hidden lg:block" /> SoftX&rdquo;
             </h2>
             <p 
               className="max-width-md lg:max-w-xs text-[#555555] text-lg leading-relaxed mt-4"
@@ -162,65 +162,79 @@ export default function About() {
             </p>
           </div>
 
-          {/* Team List */}
-          <div className="flex flex-col border-t border-[#111111]/10">
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             {[
               {
                 name: "RWABURINDI JEAN CALVIN",
-                role: "CEO & CO-FOUNDER",
-                image: "/person_1.png"
+                role: "CO-FOUNDER",
+                image: "/robot.png",
+                highlight: true
               },
               {
                 name: "KIRENGA KENNY",
-                role: "CO-FOUNDER",
-                image: "/person_1.png" // Using same image as per design ref
+                role: "DESIGNER",
+                image: "/robot.png"
               },
               {
                 name: "SUGIRA BUJURI",
-                role: "CO-FOUNDER",
-                image: "/person_1.png" // Using same image as per design ref
+                role: "CEO",
+                image: "/robot.png"
+              },
+              {
+                name: "SOFTX TEAM",
+                role: "JOIN OUR JOURNEY",
+                image: "/robot.png",
+                isPlaceholder: true
               }
             ].map((member, index) => (
               <div 
                 key={index}
-                className="flex flex-col md:flex-row items-center gap-8 py-12 border-b border-[#111111]/10 group"
+                className="flex flex-col items-center text-center group"
               >
-                {/* Member Image */}
-                <div className="w-full md:w-[220px] aspect-square relative rounded-[32px] overflow-hidden bg-[#FFDED0]">
-                  <Image
-                    src="/robot.png"
-                    alt={member.name}
-                    fill
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
+                {/* Member Image Container */}
+                <div className="relative mb-8 pt-4">
+                  {/* Glowing Ring Effect for first member */}
+                  {member.highlight && (
+                    <div className="absolute inset-0 -m-2 rounded-full bg-gradient-to-b from-[#FF6A00]/40 to-transparent blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+                  )}
+                  
+                  <div className={`
+                    w-48 h-48 rounded-full overflow-hidden relative
+                    ${member.highlight ? 'ring-2 ring-orange-500/50 ring-offset-4 ring-offset-[#F6F2EF]' : 'border border-[#111111]/5'}
+                    transition-all duration-500 group-hover:scale-105
+                  `}>
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className={`
+                        object-cover transition-all duration-700
+                        ${member.isPlaceholder ? 'opacity-20 grayscale' : 'grayscale group-hover:grayscale-0 group-hover:scale-110'}
+                      `}
+                    />
+                  </div>
                 </div>
 
-                {/* Member Info */}
-                <div className="flex-1 flex flex-col md:flex-row justify-between items-start md:items-center w-full gap-8">
-                  <div>
-                    <p className="text-[#555555] font-bold text-sm tracking-widest mb-2" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>
-                      {member.role}
-                    </p>
-                    <h3 className="text-3xl md:text-5xl font-bold text-[#111111] leading-tight" style={{ fontFamily: "'Cal Sans', sans-serif" }}>
-                      {member.name.split(' ').map((part, i) => (
-                        <span key={i} className="block">{part}</span>
-                      ))}
-                    </h3>
-                  </div>
-
+                {/* Member Details */}
+                <div className="space-y-2">
+                  <h3 className="text-xl font-bold text-[#111111] leading-tight" style={{ fontFamily: "'Cal Sans', sans-serif" }}>
+                    {member.name}
+                  </h3>
+                  <p className="text-[#555555] text-sm font-bold tracking-widest uppercase mb-6" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>
+                    {member.role}
+                  </p>
+                  
                   {/* Social Icons */}
-                  <div className="flex items-center gap-4">
-                    <button className="w-10 h-10 rounded-full border border-[#111111]/10 flex items-center justify-center hover:bg-[#111111] hover:text-white transition-all">
-                      <Twitter size={18} />
+                  <div className="flex items-center justify-center gap-3 pt-2">
+                    <button className="w-9 h-9 rounded-full bg-[#111111]/5 flex items-center justify-center text-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300">
+                      <Twitter size={16} />
                     </button>
-                    <button className="w-10 h-10 rounded-full bg-[#FF6A00] flex items-center justify-center text-white hover:scale-110 transition-all">
-                      <Facebook size={18} fill="currentColor" />
+                    <button className="w-9 h-9 rounded-full bg-[#111111]/5 flex items-center justify-center text-[#111111] hover:bg-[#FF6A00] hover:text-white transition-all duration-300">
+                      <Instagram size={16} />
                     </button>
-                    <button className="w-10 h-10 rounded-full border border-[#111111]/10 flex items-center justify-center hover:bg-[#111111] hover:text-white transition-all">
-                      <Instagram size={18} />
-                    </button>
-                    <button className="w-10 h-10 rounded-full border border-[#111111]/10 flex items-center justify-center hover:bg-[#111111] hover:text-white transition-all">
-                      <Github size={18} />
+                    <button className="w-9 h-9 rounded-full bg-[#111111]/5 flex items-center justify-center text-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300">
+                      <Github size={16} />
                     </button>
                   </div>
                 </div>
