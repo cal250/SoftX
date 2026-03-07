@@ -165,6 +165,11 @@ export default function About() {
           {/* Team Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             {[
+               {
+                name: "SUGIRA BUJURI",
+                role: "FOUNDER & CEO",
+                image: "/robot.png"
+              },
               {
                 name: "RWABURINDI JEAN CALVIN",
                 role: "CO-FOUNDER",
@@ -176,12 +181,7 @@ export default function About() {
                 role: "DESIGNER",
                 image: "/robot.png"
               },
-              {
-                name: "SUGIRA BUJURI",
-                role: "CEO",
-                image: "/robot.png"
-              },
-              {
+             {
                 name: "SOFTX TEAM",
                 role: "JOIN OUR JOURNEY",
                 image: "/robot.png",
