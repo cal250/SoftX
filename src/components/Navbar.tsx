@@ -59,7 +59,7 @@ export default function Navbar() {
             ? "linear-gradient(145deg, #f0ece6, #F6F2EF)"
             : "transparent",
           boxShadow: isScrolled
-            ? "8px 8px 20px rgba(0,0,0,0.06), -8px -8px 20px rgba(255,255,255,0.9), inset 1px 1px 2px rgba(255,255,255,0.6)"
+            ? "4px 4px 15px rgba(0,0,0,0.04), -4px -4px 15px rgba(255,255,255,0.4), inset 1px 1px 1px rgba(255,255,255,0.3)"
             : "none",
           transition: "all 0.5s ease",
           backdropFilter: isScrolled ? "blur(12px)" : "none",
