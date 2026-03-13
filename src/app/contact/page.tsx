@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Footer from "@/components/Footer";
 
 // --- Sanitization & Validation Helpers ---
@@ -87,24 +88,6 @@ function validate(fields: {
 
   return errors;
 }
-
-// --- Components ---
-
-const SoftXMark = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="text-[#111111]/80"
-  >
-    <path
-      d="M14.0625 15.9375V20.625L4.6875 30H0V25.3125L9.375 15.9375H14.0625ZM30 25.3125V30H25.3125L15.9375 20.625V15.9375H20.625L30 25.3125ZM14.0625 9.375V14.0625H9.375L0 4.6875V0H4.6875L14.0625 9.375ZM30 4.6875L20.625 14.0625H15.9375V9.375L25.3125 0H30V4.6875Z"
-      fill="currentColor"
-    />
-  </svg>
-);
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -194,7 +177,7 @@ export default function Contact() {
 
             <div className="space-y-10">
               <div className="flex items-center gap-6">
-                <SoftXMark />
+                <Mail size={24} className="text-[#FF6A00]" />
                 <span
                   className="text-[#111111] text-lg font-medium"
                   style={{ fontFamily: "var(--font-poppins), sans-serif" }}
@@ -204,7 +187,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center gap-6">
-                <SoftXMark />
+                <Phone size={24} className="text-[#FF6A00]" />
                 <span
                   className="text-[#111111] text-lg font-medium"
                   style={{ fontFamily: "var(--font-poppins), sans-serif" }}
@@ -214,7 +197,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center gap-6">
-                <SoftXMark />
+                <MapPin size={24} className="text-[#FF6A00]" />
                 <span
                   className="text-[#111111] text-lg font-medium"
                   style={{ fontFamily: "var(--font-poppins), sans-serif" }}
