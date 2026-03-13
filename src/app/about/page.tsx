@@ -111,16 +111,16 @@ export default function About() {
               </div>
             </div>
 
-            {/* Card 02 - Our Mission (Highlighted) */}
-            <div className="relative bg-[#FF6A00] rounded-[32px] p-10 flex flex-col justify-between min-h-[440px] shadow-xl shadow-orange-500/20">
+            {/* Card 02 - Our Mission */}
+            <div className="group relative bg-[#FFDED0]/30 border-2 border-[#FFC7B0] rounded-[32px] p-10 flex flex-col justify-between min-h-[440px] hover:bg-[#FF6A00] hover:border-[#FF6A00] transition-all duration-500">
               <div>
-                <span className="text-3xl font-bold text-white block mb-8" style={{ fontFamily: "var(--font-roboto-mono), monospace" }}>02</span>
-                <h3 className="text-3xl font-bold text-white mb-6" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>Our Mission</h3>
-                <p className="text-white/90 text-lg leading-relaxed" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>
+                <span className="text-3xl font-bold text-[#111111] group-hover:text-white block mb-8 transition-colors duration-500" style={{ fontFamily: "var(--font-roboto-mono), monospace" }}>02</span>
+                <h3 className="text-3xl font-bold text-[#111111] group-hover:text-white mb-6 transition-colors duration-500" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>Our Mission</h3>
+                <p className="text-[#555555] text-lg leading-relaxed group-hover:text-white transition-colors duration-500" style={{ fontFamily: "var(--font-poppins), sans-serif" }}>
                   To craft high-quality, impactful products even as concept projects that demonstrate what&apos;s possible when creativity meets technology
                 </p>
               </div>
-              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#FF6A00] transition-transform duration-500 self-start">
+              <div className="w-12 h-12 rounded-full bg-[#FF6A00] group-hover:bg-white flex items-center justify-center text-white group-hover:text-[#FF6A00] rotate-45 group-hover:rotate-0 transition-all duration-500 self-start">
                 <ArrowUpRight size={24} />
               </div>
             </div>
